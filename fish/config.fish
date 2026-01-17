@@ -28,6 +28,7 @@ alias gc "git commit"
 alias gp "git push"
 alias gl "git pull"
 alias gd "git diff"
+alias gu "git fetch upstream && git merge upstream"
 alias glog "git log --oneline --decorate --graph"
 
 # Neovim
