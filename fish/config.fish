@@ -22,7 +22,6 @@ alias df "duf"                                           # duf (prettier df)
 
 # Git shortcuts
 alias g "git"
-alias gs "git status"
 alias ga "git add"
 alias gc "git commit"
 alias gp "git push"
@@ -30,6 +29,8 @@ alias gl "git pull"
 alias gd "git diff"
 alias gu "git fetch upstream && git merge upstream"
 alias glog "git log --oneline --decorate --graph"
+alias gs "git status --untracked-files=no" # preferred default
+alias gsv "git status" # verbose i.e. shows untracked
 
 # Neovim
 alias vim "nvim"
@@ -42,6 +43,9 @@ alias py "python3"
 # Quick edits
 alias ef "nvim ~/.config/fish/config.fish"               # edit fish config
 alias sf "source ~/.config/fish/config.fish"             # reload fish config
+
+# Opencode
+alias op "opencode"
 
 set -e LS_COLORS
 set -e LSD_COLORS
@@ -56,3 +60,6 @@ set -g fish_greeting
 # echo "🐟 Fish shell ready • $(date +'%H:%M')"
 
 
+
+# opencode
+fish_add_path /home/tim/.opencode/bin
