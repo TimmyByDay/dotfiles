@@ -1,4 +1,2 @@
-- ghostty
-- [ ] window spliting kbs
-- [ ] toggle focus window kbs
-
+- [x] ghostty: window spliting kbs
+- [x] ghostty: split navigation window kbs
