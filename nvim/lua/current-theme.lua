@@ -1,1 +1,1 @@
-vim.cmd("colorscheme heap")
+vim.cmd("colorscheme neofusion")
