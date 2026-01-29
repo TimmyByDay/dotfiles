@@ -1,11 +1,12 @@
 return {
 	{
-		"diegoulloao/neofusion.nvim",
+		"marko-cerovac/material.nvim",
+		lazy = false,
 		priority = 1000,
-		name = "neofusion",
+		name = "material",
 		config = function()
-			-- Default options:
-			require("neofusion").setup({
+      vim.g.material_style = "deep ocean"
+			require("material").setup({
 				terminal_colors = true, -- add neovim terminal colors
 				undercurl = true,
 				underline = true,
@@ -27,14 +28,19 @@ return {
 				overrides = {},
 				dim_inactive = false,
 				transparent_mode = true,
+				disable = {
+					background = true,
+				},
+				lualine_style = "stealth", -- the stealth style
 			})
+
 			require("lualine").setup({
 				options = {
-					theme = require("neofusion.lualine"),
+					theme = "material",
 				},
 			})
 
-			vim.cmd([[ colorscheme neofusion ]])
+			vim.cmd.colorscheme('material')
 		end,
 	},
 }
