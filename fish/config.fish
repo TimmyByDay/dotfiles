@@ -1,10 +1,10 @@
 # ~/.config/fish/config.fish
 
-set fish_color_user      '#f5e0dc'
-set fish_color_cwd       '#f5e0dc'
-set fish_color_cwd_root  '#f5e0dc'
-set fish_color_status '#f5e0dc'
-set fish_color_host_remote '#f5e0dc'
+# set fish_color_user      '#f5e0dc'
+# set fish_color_cwd       '#f5e0dc'
+# set fish_color_cwd_root  '#f5e0dc'
+# set fish_color_status '#f5e0dc'
+# set fish_color_host_remote '#f5e0dc'
 
 # ---------- Aliases ----------
 alias l 'lsd -l'
@@ -47,10 +47,16 @@ alias sf "source ~/.config/fish/config.fish"             # reload fish config
 # Opencode
 alias op "opencode"
 
+
+# Automate issue creation with a given repo + task (json or 'title' 'body')
+alias issue "~/Documents/do/scripts/import_forgejo_issues.sh"
+
 set -e LS_COLORS
 set -e LSD_COLORS
 set -e EZA_COLORS
 set -gx LSD_CONFIG_FILE ~/.config/lsd/config.yaml
+
+export PATH="/home/tim/.config/herd-lite/bin:$PATH"
 
 # ---------- Welcome message (optional) ----------
 # Clear the default Fish greeting
@@ -60,6 +66,10 @@ set -g fish_greeting
 # echo "🐟 Fish shell ready • $(date +'%H:%M')"
 
 
-
 # opencode
 fish_add_path /home/tim/.opencode/bin
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/tim/.lmstudio/bin
+# End of LM Studio CLI section
+
