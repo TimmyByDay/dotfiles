@@ -49,7 +49,10 @@ alias op "opencode"
 
 
 # Automate issue creation with a given repo + task (json or 'title' 'body')
-alias issue "~/Documents/do/scripts/import_forgejo_issues.sh"
+alias issue.send "~/Documents/do/scripts/import_forgejo_issues.sh"
+alias issue.compose "v ~/Documents/do/scripts/issue-template.json"
+alias issue.current "~/Documents/do/scripts/issue-template.json"
+alias issue.remove "~/Documents/do/scripts/clear_forgejo_issues.sh"
 
 set -e LS_COLORS
 set -e LSD_COLORS
