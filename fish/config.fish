@@ -53,6 +53,7 @@ alias issue.send "~/Documents/do/scripts/import_forgejo_issues.sh"
 alias issue.compose "v ~/Documents/do/scripts/issue-template.json"
 alias issue.current "~/Documents/do/scripts/issue-template.json"
 alias issue.remove "~/Documents/do/scripts/clear_forgejo_issues.sh"
+alias issue.env "v ~/Documents/do/scripts/.env"
 
 set -e LS_COLORS
 set -e LSD_COLORS
