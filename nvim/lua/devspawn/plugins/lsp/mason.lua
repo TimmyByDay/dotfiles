@@ -47,18 +47,16 @@ return {
                 -- "eslint",
                 "marksman",
                 "zls",
+                "omnisharp",
             },
         })
 
-        mason_tool_installer.setup({
+mason_tool_installer.setup({
             ensure_installed = {
                 "prettier", -- prettier formatter
                 "stylua",   -- lua formatter
-                "isort",    -- python formatter
-                "pylint",
+                -- "isort",    -- python formatter
                 "clangd",
-                "denols",
-                -- { 'eslint_d', version = '13.1.2' },
             },
 
             -- NOTE: mason BREAKING Change! Removed setup_handlers

@@ -1,2 +1,0 @@
-- [x] ghostty: window spliting kbs
-- [x] ghostty: split navigation window kbs

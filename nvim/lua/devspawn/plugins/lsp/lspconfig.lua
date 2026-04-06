@@ -194,19 +194,6 @@ return {
 			},
 		})
 
-		-- gdscript (Godot)
-		vim.lsp.config("gdscript", {
-			name = "godot",
-
-			-- Connect to the running Godot editor
-			cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
-
-			on_init = function(_client, _init_result)
-				-- Start Neovim RPC server for Godot ↔ Neovim communication
-				vim.fn.serverstart("/tmp/godot.pipe")
-			end,
-		})
-
 		-- zig
 		vim.lsp.config("zls", {
 			filetypes = {
@@ -223,6 +210,7 @@ return {
 		vim.lsp.enable("astro")
 		vim.lsp.enable("tailwindcss")
 		vim.lsp.enable("gdscript")
+		vim.lsp.enable("omnisharp")
 		vim.lsp.enable("zls")
 	end,
 }
